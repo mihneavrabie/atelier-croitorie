@@ -1,0 +1,73 @@
+.about {
+    width: 85%;  
+    margin: auto;
+}
+
+header{
+    padding: 3rem 0 0 0;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+main {
+    margin-bottom: 10rem;
+ }
+
+.article-content {
+    position: relative;  
+}
+
+#about-photo{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.booking {
+    position: absolute;
+    right: 0;
+    background-color: var(--brownFont);
+    color: #fff;
+    width: 13rem;
+}
+
+@media screen and (min-width: 1000px) {
+    main, #about-photo {
+        width: 65%;
+    }
+
+    header h1 {
+        font-size: 2.7rem;
+        margin-bottom: 4rem;
+    }
+
+    main {
+        margin: auto auto 12rem auto;
+    }
+
+    #about-photo {
+        width: 100%;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    header,
+    main {
+        max-width: 1320px;
+        margin: auto;
+    }
+}
+
+/*
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}*/

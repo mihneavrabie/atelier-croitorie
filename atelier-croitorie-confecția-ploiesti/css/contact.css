@@ -1,0 +1,143 @@
+header{
+    padding: 3rem 0 0 0;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.office-photo {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    margin: 0 0 2rem 0;
+}
+
+address, 
+main a, 
+time {
+    font-family: var(--paragraphFont);
+    font-weight: 400;
+    color: var(--paragraphColor);
+    line-height: 1.7;
+    font-size: 14.6px;
+    margin-bottom: 1.3rem;
+}
+
+address {
+    font-style: normal;
+}
+
+.contact-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+}
+
+.inner-main {
+    padding: 0 1.5rem;
+}
+
+.flex-info {
+    display: flex;
+}
+
+.social-container {
+    justify-content: center;
+}
+
+.social-media-border {
+    border: 1px solid var(--brownFont);
+    border-radius: 50%;
+    width: 2.8rem;
+    height: 2.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media {
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+.social-wrap {
+    align-items: center;
+    margin: 1rem 0;
+}
+
+h2 {
+    font-size: 0.9rem;
+    font-family: var(--paragraphFont);
+    margin: 0 0 0 1rem;
+    color: #000;
+    font-weight: 600;
+    text-align: initial;
+}
+
+.hr-underline {
+    width: auto;
+    height: 1px;
+    background-color: grey;
+}
+
+.container {
+    margin: 2rem 0 7rem;
+}
+
+@media screen and (min-width: 760px) {
+    main>div {
+        width: 65%;
+        margin: auto;
+    }
+
+    header h1 {
+        font-size: 2.7rem;
+        margin-bottom: 4rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+
+    .office-photo{
+        height: 550px;
+        width: 500px;
+        margin: 0 4rem 0 0;
+        display: block;
+    }
+
+    main>div {
+        width: 40%;
+        margin: unset;
+    }
+
+    .social-container>div {
+        display: flex;
+    }
+
+    .social-container > div > a:nth-child(1){
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    header,
+    main {
+        max-width: 1320px;
+        margin: auto;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}

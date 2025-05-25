@@ -1,0 +1,627 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400;500&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --mainFont:  'Playfair Display', serif;
+    --brownFont: /*#be9669;*/ #a17f5a; /*#be9669E*/
+    --paragraphFont:  'Poppins', sans-serif;
+    --paragraphColor: grey;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    color: var(--brownFont);
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: var(--paragraphFont);
+}
+
+button, a {
+    cursor: pointer;
+}
+
+button {
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+} 
+
+/*********STYLES FOR MENU BAR************/
+.nav-top {
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+}
+
+.links {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    position: fixed;
+    z-index: 10;
+    transition: 0.5s transform ease;
+    top: 0;
+    right: 0;
+    transform: translateX(-100vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.show-links {
+    transform: translateX(0);
+}
+  
+li {
+    padding-bottom: 1rem;
+}
+
+li > a {
+    color: var(--brownFont);
+   font-weight: 400;
+    font-size: 2.5rem;
+    font-family: var(--mainFont);
+    text-align: center;
+    display: block;
+}
+  
+li > a:hover {
+    border-bottom: 3px solid var(--brownFont);
+    text-decoration: none;
+}
+
+#close-icon {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+/*********STYLES FOR HEADER (HERO) STYLES************/
+header {
+    background-color: #fff;
+    height: 100%;
+    width: 100vw;
+    padding: 1rem 1.5rem 3rem;
+}
+
+.content {
+    margin-top: 2rem;
+}
+
+h1 {
+    font-size: 2.4rem;
+    line-height: 1.2;
+}
+
+.grandeur{
+    margin: 1.5rem 0;
+}
+
+.btn {
+     width: 9rem;
+    height: 2.8rem;
+    font-family: var(--paragraphFont);
+    font-size: .9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+}
+
+.btn:hover {
+    transform: scale(0.9);
+}
+
+.explore,
+.learn-more {
+    background-color: var(--brownFont);
+    color: #fff;
+}
+
+.explore {
+    margin-right: 1rem;
+}
+
+.contact {
+    border: 1px solid var(--brownFont);
+    color: var(--brownFont);
+}
+
+.home-photo {
+    border-radius: 300px;
+    width: 85%;
+    display: block;
+    margin: 2rem auto 0;
+}
+
+h2, h1 {
+    font-family: var(--mainFont);
+    font-weight: 400;
+}
+
+/*********STYLES FOR OUR BESTSELLING SECTION STARTS************/
+#bestselling-styles {
+    margin: 4rem auto 3rem;
+    position: relative;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+.image-wrap img {
+    object-fit: cover;
+    height: auto;
+    display: block;
+    margin: 0 auto 2rem;
+    width: 80%;
+}
+
+#overview,
+#why-choose-us {
+    padding: 3.5rem 1.5rem 3rem;
+}
+
+.bestselling-styles-cta {
+    position: absolute;
+    right: 2rem;
+}
+
+.bestselling-styles-cta img {
+    width: 2rem;
+    margin-left: 0.8rem;
+}
+
+.bestselling-styles-cta a{
+    color: #fff;
+    font-family: var(--paragraphFont);
+    text-align: center;
+}
+
+/*********STYLES FOR OUR BESTSELLING SECTION ENDS************/
+p {
+    font-family: var(--paragraphFont);
+    font-weight: 400;
+    color: var(--paragraphColor);
+    line-height: 1.7;
+    font-size: 14.6px;
+    margin-bottom: 1.3rem;
+}
+
+.choose-inner>div {
+    margin: 0 auto 4rem;
+}
+
+.learn-more {
+    margin-bottom: 3rem;
+}
+
+.overview-photo {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+ h3 {
+    font-family: var(--paragraphFont);
+    font-weight: 500;
+    font-size : 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.underline {
+    width: auto;
+    height: 2px;
+    background-color: #080808;
+}
+
+#why-choose-us p{
+    margin: unset;
+}
+
+.inner{
+    margin: 2rem 0;
+}
+
+/********************STYLES FOR BLOG SECTION******************/
+.blog-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 100px;
+}
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.box img{
+    margin: 0 auto 1.5rem;
+    display: block;
+}
+
+.box {
+    width: 280px;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.box h5 {
+    font-family: var(--paragraphFont);
+    font-size: 1.1rem;
+    margin-bottom: 1rem; 
+}
+
+.blog-btn {
+    background-color: inherit;
+    border: 1px solid var(--brownFont);
+    margin-bottom: unset;
+}
+
+.blog-btn a {
+    color: var(--brownFont);
+}
+
+#why-choose-us {
+    position: relative;
+}
+
+/***********STYLES FOR 'WHY CHOOSE US' STARTS************/
+.contact-cta-btn {
+    position: absolute;
+    right: 2rem;
+    bottom: -2rem;
+    animation: bounce 2s ease infinite;
+}
+
+@keyframes bounce{
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.contact-cta-btn a {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50px;
+    background-color: var(--brownFont);
+}
+
+/*************STYLES FOR FOOTER STARTS**********/
+footer {
+    margin-top: 6rem;
+    background-color: var(--brownFont);
+    height: 3rem;
+    font-family: var(--paragraphFont); 
+}
+
+footer p {
+    color: #fff;
+    margin-bottom: unset;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 550px) { 
+    header {
+        padding: 1rem 4rem 3rem;
+    }
+
+    .content {
+        margin-bottom: 5rem;
+    }
+     
+    .content>div {
+        margin-bottom: 2rem;
+    }
+
+    .content-head {
+      font-size: 2.5rem;
+    }
+
+    .styles {
+        width: 50%;
+    }
+    
+    #bestselling-styles {
+        margin: 0rem auto;
+    }
+    
+    .overview-flex>div {
+        width: 80%;
+        margin:0 auto 3rem;
+    }
+
+    .choose-inner>div {
+        width: 60%;    
+    }  
+}
+
+@media screen and (min-width: 760px) {
+    #hamburger, 
+    #close-icon {
+       display: none;
+   }
+
+   .logo {
+    font-size: 30px;
+ }
+
+   .nav-top {
+       padding: 1rem 4rem;
+       position: relative;
+   }
+
+   li > a {
+    font-size: 1.1rem;
+    font-family: var(--paragraphFont);
+  }
+   
+   .links {
+        overflow: visible;
+        transform: inherit;
+        background-color: transparent;
+        height: 5rem;
+        width: initial;
+        position: absolute;
+        left: initial;
+        right: 2rem;    
+    }
+
+    .links > div,
+    nav ul {
+    display: flex;
+    }
+
+   li {
+       padding: 0 1rem 0 0;
+   }
+
+   h1 {
+       font-size: 3.1rem;
+   }
+
+   h2 {
+       font-size: 2.7rem;
+   }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .home-photo {
+        width: 60%;
+    }
+    
+    .image-wrap {
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .image-wrap, 
+    .grid-container, 
+    .choose-inner {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .image-wrap {
+        padding: 0 4rem;
+    }
+
+    .image-wrap img {
+        width: 100%;
+    }
+
+    #overview {
+        padding: 10rem 1.5rem 6rem;
+    }
+
+    .overview-photo {
+        height: auto;
+        width: 50%;
+    }
+
+    .box {
+        margin: 0 3rem 3rem;
+    }
+
+    .choose-inner  {
+        justify-content: center;
+    }
+
+    .choose-inner>div {
+        width: 300px;
+        margin: 0 3rem 4rem;
+    }
+
+    .bestselling-styles-cta {
+        margin-top: 2rem;
+    }
+
+    .contact-cta-btn {
+        right: 3rem;
+        bottom: 3rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+   .links {
+       height: 4rem;
+   }
+    li {
+        padding: 0 1rem 0 ;
+    }
+
+    .image-wrap, 
+    .grid-container {  
+        grid-template-columns: auto auto auto;
+    }
+
+    .content, 
+    .overview-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content {
+        margin-top: 3rem;
+   }
+
+    .overview-flex{
+        flex-direction: row-reverse;
+        margin-top: unset;
+    }
+
+    .content-head, 
+    .home-photo, 
+    .overview-flex>div {
+        margin: unset;  
+    }
+
+    .content-head{
+        font-size: 2.6rem; 
+    }
+
+    .content>div {
+        width: 50%;
+        margin-right: 4rem ;
+    }
+
+    .home-photo,
+    .overview-flex > div {
+        width: 45%;
+    }
+
+    .overview-photo {
+        margin: 0 4rem 0 0;
+        height: auto;
+        width: 40%;
+    }
+
+    .box {
+        margin: 0 2rem 3rem;
+    }
+
+    .content p {
+        margin: 2rem 0;
+    }
+
+    #overview {
+        padding: 10rem 1.5rem;
+    }
+
+    header button {
+        width: 11rem;
+    }
+
+    .contact-cta-btn {
+        right: 9rem;
+        bottom: 5rem;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    .nav-top {
+        padding: 1rem 7rem 0;
+    }
+
+    header {
+        padding: 0rem 6rem 3rem;
+    }
+
+    .links {
+        right: 6rem;
+    }
+
+    .choose-inner {
+        grid-template-columns: auto auto auto;
+    }
+
+    h2 {
+        margin-bottom: 4rem;
+    }
+
+    #overview h2 {
+        margin-bottom: 1.7rem;
+    }
+
+    .content-head {  
+        font-size: 2.8rem; 
+   
+    }
+    .content > div {
+        width: 45%;
+        margin-right: 8rem ;
+    }
+
+    h3 {
+        font-size : 1.8rem;
+    }
+
+    .home-photo{
+        width: 40%;
+    }
+
+    .overview-flex>div {
+        width: 35%;
+    }
+
+    p {
+        font-size: 16px;
+        margin-bottom: 1.3rem;
+    }
+
+    button a {
+        font-size: 15px;
+    }
+
+    .bestselling-styles-cta {
+        right: 5rem; 
+    }
+
+    .contact-cta-btn {
+        right: 7rem;
+        bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .nav-top,
+    section,
+    header {
+        max-width: 1320px;
+        margin: auto;
+    }
+}
