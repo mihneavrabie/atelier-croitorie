@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <meta name="description"
           content="" />
-        <title>S.C.M Confectia Ploiesti || Galerie </title>
+        <title>S.C.M Confecția Ploiești || Galerie</title>
         <link rel="stylesheet" href="./../css/styles.css"/>
         <link rel="stylesheet" href="./../css/gallery.css"/>
     </head>
@@ -44,40 +44,29 @@
             </nav>
         </div>
         <main role="main">
-            <div class="btn-wrapper">
-                    <!--<button id="all" type="button" class="btn active">All</button>-->
-                    <button id="native" class="gallery-btn">Modele Serie</button>
-                    <button id="suits"  class="gallery-btn">Modele Comanda</button>
-            </div> 
-            <section>
-                <div class="grid-container">
-                    <img loading="lazy" 
-                         src="./../assets/gallery-images/suits001.jpg"
-                         alt="A mustard yellow long-sleeve kaftan with embroidery" 
-                         class="native"/>
-                    <img loading="lazy"
-                         src="./../assets/gallery-images/suits005.jpg"
-                         alt="A teal green long-sleeve kaftan with flowery embroidery" 
-                         class="native"/>
-                    <img loading="lazy" 
-                         src="./../assets/gallery-images/suits004.jpg"
-                         alt="A teal green short sleeve background with black ang teal designs" 
-                         class="native"/>         
-                    <img loading="lazy" 
-                        src="./../assets/gallery-images/full-native005.jpg"
-                         alt="Two long sleeve kaftans on separate mannequins" 
-                         class="native"/>
-                    <img loading="lazy" 
-                         src="./../assets/gallery-images/full-native003.jpg"
-                         alt="A man wearing a cream color long-sleeve kaftan, with brown flowery embroidery" 
-                         class="native"/>          
+            <p class="gallery-info">Executăm lucrări atât în serie, cât și la comandă. Alegeți categoria dorită.</p>
 
+            <section id="serie">
+                <h2>Modele serie</h2>
+                <div class="grid-container">
+                    <a href="./serie.html"><img loading="lazy" src="./../assets/gallery-images/full-native005.jpg" alt="Costum tradițional" class="native"/></a>
+                    <a href="./serie.html"><img loading="lazy" src="./../assets/gallery-images/full-native003.jpg" alt="Costum crem" class="native"/></a>
+                    <a href="./serie.html"><img loading="lazy" src="./../assets/gallery-images/native012.jpg" alt="Model serie" class="native"/></a>
+                </div>
+            </section>
+
+            <section id="comanda">
+                <h2>Modele la comandă</h2>
+                <div class="grid-container">
+                    <a href="./comanda.html"><img loading="lazy" src="./../assets/gallery-images/suits001.jpg" alt="Costum elegant" class="suits"/></a>
+                    <a href="./comanda.html"><img loading="lazy" src="./../assets/gallery-images/suits005.jpg" alt="Costum negru" class="suits"/></a>
+                    <a href="./comanda.html"><img loading="lazy" src="./../assets/gallery-images/suits004.jpg" alt="Costum cu detalii" class="suits"/></a>
+                </div>
             </section>
         </main>
         <footer role="contentinfo" class="flex-center">
             <p>S.C.M Confectia Ploiesti &copy;<span id="date">2021</span> All Rights Reserved</p>
         </footer>
     <script src="./../js/index.js"></script>
-    <script src="./../js/gallery.js"></script>
     </body>
 </html>

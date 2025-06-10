@@ -33,8 +33,11 @@ main {
     margin: 0 auto 2rem;
 }
 
-.suits{
-    display: none;
+
+.gallery-info {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 2rem;
 }
 
 @media screen and (min-width: 560px) {
