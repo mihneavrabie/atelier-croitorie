@@ -259,15 +259,33 @@ p {
     justify-content: center;
     margin: 3rem 0;
 }
+.hero-text {
+  text-align: center;
+}
 
+.hero-text h1 {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
 .logo-header {
   height: 40px;
   width: auto;
 }
-
+/* Forțare centrare logo în #overview */
+.overview-flex > div {
+  text-align: center;
+}
 @media screen and (max-width: 768px) {
   .logo-header {
     height: 35px;
+  }
+    .overview-logo {
+    max-width: 210px;
+    margin: 0rem auto;
+  }
+    .hero-text h1 {
+    font-size: 2rem;
   }
 }
 
@@ -296,11 +314,15 @@ p {
     text-align: center;
     margin-bottom: 4rem;
 }
-
+.nav-mini-logo {
+  height: 45px;
+  margin-right: 0.8rem;
+  object-fit: contain;
+}
 .box h5 {
     font-family: var(--paragraphFont);
-    font-size: 1.1rem;
-    margin-bottom: 1rem; 
+    font-size: 20rem;
+    margin-bottom: 20rem; 
 }
 
 .blog-btn {
@@ -315,6 +337,8 @@ p {
 
 #why-choose-us {
     position: relative;
+      padding: 2rem 1.5rem;
+
 }
 
 /***********STYLES FOR 'WHY CHOOSE US' STARTS************/
@@ -467,10 +491,6 @@ footer p {
         grid-template-columns: auto auto;
     }
 
-    .image-wrap {
-        padding: 0 4rem;
-    }
-
     .image-wrap img {
         width: 100%;
     }
@@ -519,12 +539,22 @@ footer p {
     .grid-container {  
         grid-template-columns: auto auto auto;
     }
-
+    .overview-logo {
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    object-fit: contain;
+    }
     .content, 
     .overview-flex {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .centered-text {
+    text-align: center;
     }
 
     .content {
@@ -656,4 +686,33 @@ footer p {
         max-width: 1320px;
         margin: auto;
     }
+}
+
+@media screen and (min-width: 760px) {
+  .links {
+    position: static;
+    transform: none;
+    height: auto;
+    width: auto;
+    display: flex !important;
+    background-color: transparent;
+    overflow: visible;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  #close-icon,
+  #hamburger {
+    display: none;
+  }
+
+  li > a {
+    font-size: 1rem;
+    font-family: var(--paragraphFont);
+    font-weight: 500;
+  }
 }

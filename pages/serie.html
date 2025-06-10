@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./../assets/favicon-32x32.png">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>S.C.M Confectia Ploiesti || Galerie</title>
+  <link rel="stylesheet" href="./../css/styles.css" />
+  <link rel="stylesheet" href="./../css/gallery.css" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    .page-wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main {
+      flex: 1;
+      margin: 3rem 0 6rem;
+    }
+  </style>
+</head>
+<body>
+<div class="page-wrapper">
+  <div class="flex nav-top">
+    <a href="./../index.html" class="logo">S.C.M Confectia Ploiesti</a>
+    <nav role="navigation">
+      <button id="hamburger" aria-label="Toggle Menu" aria-expanded="false" aria-controls="mainNavLinks">
+        <img src="./../assets/icons/menu.svg" alt="" width="50" role="presentation" />
+      </button>
+      <div id="mainNavLinks" class="links" aria-labelledby="mainNavHeading" aria-live="polite">
+        <button id="close-icon">
+          <img src="./../assets/icons/close-icon.svg" alt="" width="25" role="presentation"/>
+        </button>
+        <h2 id="mainNavHeading" hidden>Main menu</h2>
+        <ul>
+          <li><a href="./../index.html">Acasa</a></li>
+          <li><a href="./about.html">Despre noi</a></li>
+          <li><a href="#">Galerie</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <main role="main">
+    <section class="gallery-section">
+      <h1 class="gallery-title">Serie</h1>
+      <p class="gallery-description">
+        Serie
+      </p>
+      <div class="btn-wrapper">
+        <a href="./gallery.html" class="gallery-btn">Galerie</a>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo" class="flex-center">
+    <p>S.C.M Confectia Ploiesti &copy;<span id="date">2025</span> Toate drepturile rezervate</p>
+  </footer>
+</div>
+<script src="./../js/index.js"></script>
+<script src="./../js/gallery.js"></script>
+</body>
+</html>

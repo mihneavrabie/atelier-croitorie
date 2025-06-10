@@ -1,137 +1,114 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description"
-          content="S.C.M Confecția Ploiești oferă haine la comandă, croite manual cu atenție la detalii și materiale de calitate.">
-    <meta name="keywords"
-          content="croitorie Ploiești, haine la comandă, Confecția, costum bărbați, retușuri">
-    <title>S.C.M Confecția Ploiești</title>
-    <link rel="stylesheet" href="./css/styles.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description"
+        content="S.C.M Confecția Ploiești oferă haine la comandă, croite manual cu atenție la detalii și materiale de calitate.">
+  <meta name="keywords"
+        content="croitorie Ploiești, haine la comandă, Confecția, costum bărbați, retușuri">
+  <title>S.C.M Confecția Ploiești</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <style>
+    #atelier-video {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 1rem;
+      margin: auto;
+      display: block;
+    }
+  </style>
 </head>
 <body>
-    <div class="flex nav-top">
-        <a href="#" class="logo">S.C.M Confecția Ploiești </a>
-        <nav role="navigation">
-            <button id="hamburger" aria-slabel="Meniu" aria-expanded="false" aria-controls="mainNavLinks">
-                <img src="./assets/icons/menu.svg" alt="" width="50" role="presentation" />
-            </button>
-            <div id="mainNavLinks" class="links" aria-labelledby="mainNavHeading" aria-live="polite">
-                <button id="close-icon">
-                    <img src="./assets/icons/close-icon.svg" alt="" width="25" role="presentation"/>
-                </button>
-                <h2 id="mainNavHeading" hidden>Meniu principal</h2>
-                <ul>
-                    <li><a href="#">Acasă</a></li>
-                    <li><a href="./pages/about.html">Despre noi</a></li>
-                    <li><a href="./pages/gallery.html">Galerie</a></li>
-                    <li><a href="./pages/contact.html">Contact</a></li>  
-                </ul>
-            </div>
-        </nav>
-    </div>
+  <div class="flex nav-top">
+    <a href="#" class="logo">S.C.M Confecția Ploiești </a>
+    <nav role="navigation">
+      <button id="hamburger" aria-slabel="Meniu" aria-expanded="false" aria-controls="mainNavLinks">
+        <img src="./assets/icons/menu.svg" alt="" width="50" role="presentation" />
+      </button>
+      <div id="mainNavLinks" class="links" aria-labelledby="mainNavHeading" aria-live="polite">
+        <button id="close-icon">
+          <img src="./assets/icons/close-icon.svg" alt="" width="25" role="presentation"/>
+        </button>
+        <h2 id="mainNavHeading" hidden>Meniu principal</h2>
+        <ul>
+          <li><a href="#">Acasă</a></li>
+          <li><a href="./pages/about.html">Despre noi</a></li>
+          <li><a href="./pages/gallery.html">Galerie</a></li>
+          <li><a href="./pages/contact.html">Contact</a></li>  
+        </ul>
+      </div>
+    </nav>
+  </div>
 
-    <header role="banner">
-        <div class="content">
-            <div>
-                <h1>Confectii moderne... </h1>
-                <h1>Linii eterne!</h1>
-                <br>
-                <br>
+  <header role="banner">
+    <div class="content">
+      <div class="hero-text">
+        <h1>Confectii moderne </h1>
+        <h1>- Linii eterne - </h1>
+        <br><br>
+        <div class="flex">
+          <a href="./pages/about.html" class="explore btn">Despre noi</a>
+          <a href="./pages/gallery.html" class="explore btn">Galerie</a>
+          <a href="./pages/contact.html" class="contact btn">Contact</a>
+        </div>
+      </div>
+      <img src="./assets/images/roz.png" alt="Două costume pe manechine" class="home-photo"/>
+    </div>  
+  </header>
 
-                <div class="flex">
-                    <a href="./pages/gallery.html" class="explore btn">Serie</a>
-                    <a href="./pages/gallery.html" class="explore btn">Custom</a>
-                    <a href="./pages/contact.html" class="contact btn">Contact</a>
-                </div>
-            </div>
-            <img src="./assets/images/home-photo.JPG" 
-                 alt="Două costume pe manechine" class="home-photo"/>
-        </div>  
-    </header>
+  <main role="main">
+    <section id="overview" aria-labelledby="an-overview-on-grandeur-tailors">
+      <div class="overview-flex">
+        <div>
+          <img src="./assets/images/logo.jpeg" alt="Logo Confecția" class="overview-logo" />
 
-    <main role="main">
-        <section id="bestselling-styles" aria-labelledby="our-styles">
-            <h2 id="our-styles">Modelele noastre</h2>
-            <div class="image-wrap">
-                <img loading="lazy" src="./assets/gallery-images/suits001.jpg" alt="Costum gri elegant pentru bărbați" />
-                <img loading="lazy" src="./assets/gallery-images/suits005.jpg" alt="Costum negru cu guler gri" />
-                <img loading="lazy" src="./assets/gallery-images/suits004.jpg" alt="Costum cu buline" />
-                <img loading="lazy" src="./assets/gallery-images/full-native005.jpg" alt="Ținută tradițională crem cu broderie" />
-                <img loading="lazy" src="./assets/gallery-images/full-native003.jpg" alt="Costum verde brodat pe manechin" />
-            </div>
-            <button class="bestselling-styles-cta flex-center">
-                <a href="./pages/gallery.html" class="cta-links">Vezi mai multe modele</a>
-            </button> 
-        </section>
+          <p style="text-align: center;"><strong>seriozitate - promptitudine - calitate</strong></p>
+          <p class="grandeur">Designeul modern, acuratetea tiparelor si calitatea executiei, asigurate de atelierul propriu de productie, confera produselor noastre succesul actual.</p>
+          <p>Fiecare articol vestimentar este realizat manual, cu atenție și experiență. Punem accent pe relația cu
+          clientul și oferim consultanță vestimentară, pentru ca fiecare alegere să fie perfectă.</p>
+          <a href="./pages/about.html" class="learn-more btn">Află mai multe</a>
+        </div>
 
-        <section id="overview" aria-labelledby="an-overview-on-grandeur-tailors">
-            <div class="overview-flex">
-                <div>
-                    <h2 id="an-overview-on-grandeur-tailors">Despre Confecția</h2>
-<p style="text-align: center;"><strong>seriozitate - promptitudine - calitate</strong></p>
+        <!-- VIDEO CU SUNET -->
+        <video id="atelier-video" controls preload="none" loop>>
+          <source src="./assets/video/atelier-conf.mp4" type="video/mp4">
+          Browserul tău nu suportă redarea video.
+        </video>
+
+      </div>
+    </section>
 
 
-<p class="grandeur">Designeul modern, acuratetea tiparelor si calitatea executiei, asigurate de atelierul propriu de productie, confera produselor noastre succesul actual.</p>
+  </main>
 
-                    <p>Fiecare articol vestimentar este realizat manual, cu atenție și experiență. Punem accent pe relația cu
-                    clientul și oferim consultanță vestimentară, pentru ca fiecare alegere să fie perfectă.</p>
-                    <a href="./pages/about.html" class="learn-more btn">Află mai multe</a>
-                </div>
-                <img loading="lazy" src="./assets/images/bg-photo3.jpg" class="overview-photo"
-                     alt="Imagine din atelierul Confecția Ploiești"/>
-            </div>
-        </section>
+  <footer role="contentinfo" class="flex-center">
+    <p>S.C.M Confecția Ploiesti &copy;<span id="date">2025</span> Toate drepturile rezervate</p>
+  </footer>   
 
-        <section id="why-choose-us" aria-labelledby="why-we-stand-out">
-            <h2 id="why-we-stand-out">De ce să ne alegi</h2>
-            <div class="choose-inner">
-                <div>
-                    <div class="underline"></div>
-                    <div class="inner">
-                        <h3><span>01.</span> Măiestrie</h3>
-                        <p>Fiecare piesă este creată special pentru tine. Croitoria si confectiile sunt o artă, iar noi o practicăm cu pasiune
-                        pentru ca tu să te simți perfect în hainele tale.</p>
-                    </div>
-                </div> 
-                <div>
-                    <div class="underline"></div>
-                    <div class="inner">
-                        <h3><span>02.</span> Experiență</h3>
-                        <p>Fiecare detaliu reflectă ani de experiență și dedicare.
-                        Lucrăm cu grijă, iar fiecare client primește produse personalizate cu atenție.</p>
-                    </div>
-                </div>
-                <div> 
-                    <div class="underline"></div>
-                    <div class="inner">
-                        <h3><span>03.</span> Calitate</h3>
-                        <p>Folosim cele mai bune tehnici și nu facem compromisuri când vine vorba de durabilitate,
-                        aspect și confort. Calitatea este prioritatea noastră.</p>
-                    </div>   
-                </div>
-            </div> 
+  <script src="./js/index.js"></script>
+  <script>
+    const atelierVideo = document.getElementById('atelier-video');
 
-            <div class="contact-cta-btn">
-                <a href="./pages/contact.html" class="flex-center">
-                    <img src="./assets/icons/contact-cta.svg"
-                        alt="contactează-ne"
-                        style="height: 3rem;"/>
-                </a>
-            </div>
-        </section> 
-    </main>
+    const videoObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // încearcă să redea cu sunet
+          const playPromise = atelierVideo.play();
+          if (playPromise !== undefined) {
+            playPromise.catch(error => {
+              console.log("Autoplay cu sunet posibil blocat de browser.", error);
+            });
+          }
+        } else {
+          atelierVideo.pause();
+        }
+      });
+    }, { threshold: 0.5 });
 
-    <footer role="contentinfo" class="flex-center">
-        <p>S.C.M Confecția Ploiesti &copy;<span id="date">2025</span> Toate drepturile rezervate</p>
-    </footer>   
-
-    <script src="./js/index.js"></script>
-    <script src="three.min.js"></script>
-    <script src="TweenMax.min.js"></script>
-    <script src="dist/hover.umd.js"></script>    
+    if (atelierVideo) videoObserver.observe(atelierVideo);
+  </script>
 </body>
 </html>

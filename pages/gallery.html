@@ -1,83 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" sizes="32x32" href="./../assets/favicon-32x32.png">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <meta name="description"
-          content="" />
-        <title>S.C.M Confectia Ploiesti || Galerie </title>
-        <link rel="stylesheet" href="./../css/styles.css"/>
-        <link rel="stylesheet" href="./../css/gallery.css"/>
-    </head>
-    <body>
-        <div class="flex nav-top">
-            <a href="./../index.html" class="logo">S.C.M Confectia Ploiesti</a>
-            <nav role="navigation">
-                <button id="hamburger" aria-label="Toggle Menu" 
-                    aria-expanded="false" aria-controls="mainNavLinks">
-                    <img src="./../assets/icons/menu.svg"  
-                        alt=""" width="50" 
-                        role="presentation" />
-                </button>
-                <div id="mainNavLinks" class="links" 
-                    aria-labelledby="mainNavHeading"  aria-live="polite">
-                    <button id="close-icon">
-                        <img src="./../assets/icons/close-icon.svg" alt=""
-                            width="25" role="presentation"/>
-                    </button>
-                    <h2 id="mainNavHeading" hidden>Main menu</h2>
-                    <ul>
-                        <li>
-                            <a href="./../index.html">Acasa</a></li>
-                        <li>
-                            <a href="./about.html">Despre noi</a></li>
-                        <li>
-                            <a href="#">Galerie</a></li>
-                        <li>
-                            <a href="./contact.html">Contact</a></li>
-                        <!--<li>
-                            <a href="./pages/blog.html"><span>05</span>OUR BLOG</a></li>-->     
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <main role="main">
-            <div class="btn-wrapper">
-                    <!--<button id="all" type="button" class="btn active">All</button>-->
-                    <button id="native" class="gallery-btn">Modele Serie</button>
-                    <button id="suits"  class="gallery-btn">Modele Comanda</button>
-            </div> 
-            <section>
-                <div class="grid-container">
-                    <img loading="lazy" 
-                         src="./../assets/gallery-images/suits001.jpg"
-                         alt="A mustard yellow long-sleeve kaftan with embroidery" 
-                         class="native"/>
-                    <img loading="lazy"
-                         src="./../assets/gallery-images/suits005.jpg"
-                         alt="A teal green long-sleeve kaftan with flowery embroidery" 
-                         class="native"/>
-                    <img loading="lazy" 
-                         src="./../assets/gallery-images/suits004.jpg"
-                         alt="A teal green short sleeve background with black ang teal designs" 
-                         class="native"/>         
-                    <img loading="lazy" 
-                        src="./../assets/gallery-images/full-native005.jpg"
-                         alt="Two long sleeve kaftans on separate mannequins" 
-                         class="native"/>
-                    <img loading="lazy" 
-                         src="./../assets/gallery-images/full-native003.jpg"
-                         alt="A man wearing a cream color long-sleeve kaftan, with brown flowery embroidery" 
-                         class="native"/>          
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./../assets/favicon-32x32.png">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>S.C.M Confectia Ploiesti || Galerie</title>
+  <link rel="stylesheet" href="./../css/styles.css" />
+  <link rel="stylesheet" href="./../css/gallery.css" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
 
-            </section>
-        </main>
-        <footer role="contentinfo" class="flex-center">
-            <p>S.C.M Confectia Ploiesti &copy;<span id="date">2021</span> All Rights Reserved</p>
-        </footer>
-    <script src="./../js/index.js"></script>
-    <script src="./../js/gallery.js"></script>
-    </body>
+    .page-wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main {
+      flex: 1;
+      margin: 3rem 0 6rem;
+    }
+  </style>
+</head>
+<body>
+<div class="page-wrapper">
+  <div class="flex nav-top">
+    <a href="./../index.html" class="logo">S.C.M Confectia Ploiesti</a>
+    <nav role="navigation">
+      <button id="hamburger" aria-label="Toggle Menu" aria-expanded="false" aria-controls="mainNavLinks">
+        <img src="./../assets/icons/menu.svg" alt="" width="50" role="presentation" />
+      </button>
+      <div id="mainNavLinks" class="links" aria-labelledby="mainNavHeading" aria-live="polite">
+        <button id="close-icon">
+          <img src="./../assets/icons/close-icon.svg" alt="" width="25" role="presentation"/>
+        </button>
+        <h2 id="mainNavHeading" hidden>Main menu</h2>
+        <ul>
+          <li><a href="./../index.html">Acasa</a></li>
+          <li><a href="./about.html">Despre noi</a></li>
+          <li><a href="#">Galerie</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <main role="main">
+    <section class="gallery-section">
+      <h1 class="gallery-title">Ce oferim</h1>
+      <p class="gallery-description">
+        La S.C.M Confectia Ploiesti realizăm atât <strong>producție de serie</strong>, cât și 
+        <strong>lucrări la comandă</strong>, adaptate cerințelor și nevoilor fiecărui client.
+      </p>
+<div class="gallery-pair">
+  <div class="gallery-card">
+    <a href="./serie.html" class="gallery-btn">Modele Serie</a>
+    <img src="./../assets/gallery-images/suits004.jpg" alt="Serie" class="gallery-image"/>
+  </div>
+
+  <div class="gallery-card">
+    <a href="./comanda.html" class="gallery-btn">Modele Comanda</a>
+    <img src="./../assets/gallery-images/suits005.jpg" alt="Comanda" class="gallery-image"/>
+  </div>
+</div>
+
+    </section>
+        <section id="why-choose-us" aria-labelledby="why-we-stand-out">
+      <h2 id="why-we-stand-out">De ce să ne alegi</h2>
+      <div class="choose-inner">
+        <div>
+          <div class="underline"></div>
+          <div class="inner">
+            <h3><span>01.</span> Măiestrie</h3>
+            <p>Fiecare piesă este creată special pentru tine. Croitoria si confectiile sunt o artă, iar noi o practicăm cu pasiune
+            pentru ca tu să te simți perfect în hainele tale.</p>
+          </div>
+        </div> 
+        <div>
+          <div class="underline"></div>
+          <div class="inner">
+            <h3><span>02.</span> Experiență</h3>
+            <p>Fiecare detaliu reflectă ani de experiență și dedicare.
+            Lucrăm cu grijă, iar fiecare client primește produse personalizate cu atenție.</p>
+          </div>
+        </div>
+        <div> 
+          <div class="underline"></div>
+          <div class="inner">
+            <h3><span>03.</span> Calitate</h3>
+            <p>Folosim cele mai bune tehnici și nu facem compromisuri când vine vorba de durabilitate,
+            aspect și confort. Calitatea este prioritatea noastră.</p>
+          </div>   
+        </div>
+      </div> 
+
+      <div class="contact-cta-btn">
+        <a href=".././pages/contact.html" class="flex-center">
+          <img src=".././assets/icons/contact-cta.svg"
+              alt="contactează-ne"
+              style="height: 3rem;"/>
+        </a>
+      </div>
+    </section> 
+  </main>
+
+  <footer role="contentinfo" class="flex-center">
+    <p>S.C.M Confectia Ploiesti &copy;<span id="date">2025</span> Toate drepturile rezervate</p>
+  </footer>
+</div>
+<script src="./../js/index.js"></script>
+<script src="./../js/gallery.js"></script>
+</body>
 </html>
+  
