@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>S.C.M Confectia Ploiesti || Certificări</title>
+  <link rel="stylesheet" href="./../css/styles.css" />
+  <style>
+    main {
+      padding: 2rem 1.5rem 4rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .certificat {
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+
+    .certificat img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 1rem;
+    }
+
+    .certificat p {
+      font-size: 1rem;
+      color: var(--paragraphColor);
+      font-family: var(--paragraphFont);
+    }
+  </style>
+</head>
+<body>
+  <div class="flex nav-top">
+    <a href="./../index.html" class="logo">S.C.M Confecția Ploiești</a>
+    <nav role="navigation">
+      <button id="hamburger" aria-label="Meniu" aria-expanded="false" aria-controls="mainNavLinks">
+        <img src="./../assets/icons/menu.svg" alt="" width="50" role="presentation" />
+      </button>
+      <div id="mainNavLinks" class="links" aria-labelledby="mainNavHeading" aria-live="polite">
+        <button id="close-icon">
+          <img src="./../assets/icons/close-icon.svg" alt="" width="25" role="presentation"/>
+        </button>
+        <h2 id="mainNavHeading" hidden>Meniu principal</h2>
+        <ul>
+          <li><a href="./../index.html">Acasă</a></li>
+          <li><a href="./about.html">Despre noi</a></li>
+          <li><a href="./gallery.html">Galerie</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./certificari.html">Certificări</a></li> <!-- ADĂUGAT -->
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <main>
+    <h1>Certificări</h1>
+
+    <div class="certificat">
+      <img src="./../assets/images/cert1.jpeg" alt="Certificat 1" />
+      <p>Certificare ISO 9001 pentru managementul calității în producția de confecții.</p>
+    </div>
+
+    <div class="certificat">
+      <img src="./../assets/images/cert2.jpeg" alt="Certificat 2" />
+      <p>Certificat de conformitate pentru materiale textile folosite în procesul de fabricație.</p>
+    </div>
+
+    <div class="certificat">
+      <img src="./../assets/images/cert3.jpeg" alt="Certificat 3" />
+      <p>Autorizare profesională pentru lucrări personalizate la comandă cu standarde europene.</p>
+    </div>
+  </main>
+
+  <footer role="contentinfo" class="flex-center">
+    <p>S.C.M Confecția Ploiești &copy;<span id="date">2025</span> Toate drepturile rezervate</p>
+  </footer>
+
+  <script src="./../js/index.js"></script>
+</body>
+</html>
