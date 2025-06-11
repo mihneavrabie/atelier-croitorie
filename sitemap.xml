@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://www.confectia.ro/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.confectia.ro/pages/about.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.confectia.ro/pages/gallery.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.confectia.ro/pages/contact.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.confectia.ro/pages/serie.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.confectia.ro/pages/comanda.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.confectia.ro/pages/blog.html</loc>
+  </url>
+
+</urlset>
