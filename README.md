@@ -1,5 +1,5 @@
 # Atelier Croitorie Ploiești Website
-This is a multi-page website for a fashion design brand. Atelier Croitorie Ploiești is a Nigeria-based custom tailor shop with a strong commitment to excellence.
+This is a multi-page website for a fashion design brand. Atelier Croitorie Ploiești is a custom confection shop with a strong commitment to excellence.
 
 ## Pages
 - Home
