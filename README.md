@@ -7,11 +7,8 @@ This is a multi-page website for a fashion design brand. Atelier Croitorie Ploie
 - Galerie
 - Contact 
 
-## Screenshot
-![](./assets/screenshot.png)
 
-## Live Site
-- Live Site URL: http://grandeurtailors.com/
+
 
 ## Built with
 
